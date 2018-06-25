@@ -1,0 +1,6 @@
+div#header {
+  right: 0;
+  left: 0;
+  border-bottom: 2px solid blue;
+  padding: 0.5em;
+}

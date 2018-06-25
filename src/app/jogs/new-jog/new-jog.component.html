@@ -1,0 +1,5 @@
+<div>
+  <button type="button" (click) = "toggleForm()">{{ buttonText() }}</button>
+  <app-jog-edit *ngIf="formShown" [jog]="null" (cancel)="toggleForm()">
+  </app-jog-edit>
+</div>

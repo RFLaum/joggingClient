@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-siding: border-box;
+}
+
+.link-app {
+  color: blue;
+  cursor: pointer;
+  padding: 1em;
+}
+
+ul.no-dec {
+  list-style-type: none;
+}
+
+form.errored {
+  background-color: red;
+}

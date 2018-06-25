@@ -1,0 +1,3 @@
+<app-jog *ngIf="!editMode" [jogData]="jog" (click)="toggleEdit()"></app-jog>
+<app-jog-edit *ngIf="editMode" [jog]="jog" (cancel)="toggleEdit()">
+</app-jog-edit>

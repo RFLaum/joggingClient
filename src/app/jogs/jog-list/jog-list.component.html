@@ -1,0 +1,15 @@
+<nav aria-label="Jog navigation">
+  <a class="link-app" *ngIf="page > 1">&larr; Previous</a>
+  Page
+  <input *ngIf="numPages() > 1"
+    type="number"
+    min="1"
+    max="{{numPages()}}"
+    [(ngModel)] = "page">
+  of <strong>{{numPages()}}</strong>
+  <a class="link-app" *ngIf="page < numPages()">Next &rarr;</a>
+</nav>
+<ul class="no-dec">
+  <!-- <app-jog *ngFor = "let jog of jogs" [jogData] = "jog"></app-jog> -->
+  <app-jog-wrapper *ngFor = "let jog of jogs" [jog]="jog"></app-jog-wrapper>
+</ul>

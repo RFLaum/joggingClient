@@ -1,0 +1,9 @@
+li.jog:hover {
+  background-color: aqua;
+  cursor: pointer;
+}
+
+li.jog{
+  border: 1px solid black;
+  padding: 1em;
+}

@@ -1,0 +1,6 @@
+<div id="header">
+  <app-in-header *ngIf = "reader.loggedIn(); else outHeader;"></app-in-header>
+  <ng-template #outHeader>
+    <app-out-header></app-out-header>
+  </ng-template>
+</div>
